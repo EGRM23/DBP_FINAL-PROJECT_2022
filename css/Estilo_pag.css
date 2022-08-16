@@ -3,6 +3,10 @@
     padding: 0px;
     font-family: arial;
 }
+table {
+    width: 100%;
+    background-color: transparent;
+}
 .ico{
     width: 15px;
 }
@@ -10,6 +14,7 @@
     padding-left: 790px;
 }
 #mini_buttons{
+    display: flex;
     background-color: #072146;
     z-index: 10;
     padding-top: 5px;
@@ -18,11 +23,12 @@
 #seccion_2{
     padding:10px 0px 10px 0px;
 }
-a{
-    color: #ffffff;
+a.mini_btns_encabezado{
+    color:#ffffff;
     line-height: 0px;
     text-decoration: none;
     padding-left: 3px;
+    
 }
 #seccion_botones ul{
     list-style: none;
@@ -33,7 +39,7 @@ a{
     margin: 0px 30px 0px 0px;
     font-size: 12px;
 }#logo{
-    margin-left: 15%;
+    margin-left: 20%;
 }
 #logo_i{
     width: 150px;
@@ -64,6 +70,15 @@ a{
     flex-direction: column;
     font-size: 14px;
 }
+#botones_S{
+    margin-left: 80px;
+}
+#btn_azul{
+    color:#2dcccd;
+}
+#btn_amarillo{
+    color:#f8cd51;
+}
 #Btn_principales{
     background-color: #004481;
     color:#ffffff;
@@ -74,30 +89,284 @@ a{
     color:rgb(150, 150, 150);
     list-style: none;
     display: flex;
-    padding-left: 15%;
+    padding-left: 20%;
 }
 #Btn_principales li{
-    font-size: 18px;
-    display:block;
-    margin: 15px 180px 15px 0px;
+    display: block;
+    margin: 15px 170px 15px 0px; 
 }
-#aqui{
-    font:bold;
+#Btn_principales a{
+    line-height: 0px;
+    text-decoration: none;
+    color:rgb(150, 150, 150);
+    font-size: 16px;
+    
+}
+#Btn_principales.aqui{
+    font-weight: bold;
     color:#ffffff;
 }
+#cuerpo{
+    margin: 5px 0px 5px;
+    display:flex;
+}
+#boton_panelsec2{
+    width: 295px;
+    padding-left: 5px;
+    height: 200px;
+    background-color: #004481;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+#btn_panelsec2{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+}
 #panel_principal{
-    padding-left: 15%;
+    padding-left: 20%;
+    float: left;
+    width: 630px;
+}
+#p_panelsec2{
+    font-size: 14px;
+    color:#ffffff;
+    margin: 5px 0px 10px 0px; 
+}
+#a_btn_panelsec2{
+    color:#2dcccd;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 30px 0px 0px 0px;
+    line-height: 0px;
+    text-decoration: none;
+}
+#panel_secundaria{
+    width: 150px;
+    padding-left: 25px;
+    float: left;
+    font: inherit;
+}
+#panel_botones {
+    margin: 30px 0px 30px 0px;
+}
+.boton_panelsec {
+    margin-bottom: 10px;
+}
+#q_dig{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px 25px 25px;
+    width: 250px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    color: #0065b7;
+    background: linear-gradient(to top, #f4f4f4, white);
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+.boton_panelsec button {
+    display: inline-flex;
+    padding-left: 20px;
+    width: 300px;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    color: #0065b7;
+    background: linear-gradient(to top, #f4f4f4, white);
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
 }
 #principal_panel{
     margin: 30px 0px 30px 0px;
     background-color: #f4f4f4;
     height: 300px;
-    width: 850px;
     padding: 25px 25px 25px 25px;
     border-radius: 8px;
-    font-size: 25px;
+    font-size: 20px;
+}
+#abrir-cuenta-btn{
+    padding: 25px 25px 25px 10px;
+}
+.abrir-cta-online {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+#panel_contenido {
+    display: block;
+}
+.icon_info {
+    background-image: url(Recursos/icono_info_16x16.png);
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.bloque_switch-saldos {
+    margin-bottom: 10px;
+    margin-top: -5px;
+    float: right;
+    clear: both;
+}
+.btn-switch-saldos {
+    padding: 2px 20px;
+    font-size: 11px;
+    border: 1px solid #00559d;
+    background: linear-gradient(to bottom,#0079c1 0,#00559d 100%);
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: none;
+    position: relative;
+}
+.btn-switch-saldos_white {
+    padding: 2px 20px;
+    font-size: 11px;
+    border: 1px solid #d5e2ee;
+    background: linear-gradient(to bottom,#fff 0,#f5f7f8 100%); 
+    color: #0072c9;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: none;
+    position: relative;
+}
+.tables_panel {
+    clear: right;
+}
+.tables_panel .tables_header {
+    border-radius: 4px 4px 0 0;
+    background-color: #f0f2ef;
+    border: 1px solid #dcdcdc;
+    min-height: 50px;
+}
+.tables_panel .tables_header h4 {
+    margin: 15px 20px;
+    font-size: 18px;
+    color: #434a58;
+}
+.table_panel table {
+    font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    clear: both;
+}
+.texto-importe-cabecera {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #f8f8f5;
+    border-right: 1px solid #dcdcdc;
+    padding: 4px 10px;
+    color: #434a58;
+    text-transform: uppercase;
+}
+.texto-body {
+    padding: 10px 10px;
+}
+.tables_body_cuentas-prestamos {
+    position: relative;
+    border-bottom: 3px solid #f4f7f5;
+}
+.btn-table_body {
+    padding-right: 5px;
+    font-family: arial;
+    font-size: 11px;
+    padding: 2px 9px 2px 8px;
+    background-color: #1973b8 !important;
+    background-image: linear-gradient(100deg, #043263 0%, #043263 50%, #004481 50%, #004481 100%) !important;
+    background-size: 210% 100% !important;
+    background-position: 100% center !important;
+    background-repeat: no-repeat !important;
+    color: #ffffff;
+    border: none !important;
+    border-radius: 0px !important;
+}
+.link {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0065b7;
+}
+.txt_td_tbody {
+    font-size: 11px;
+    color: #434a58;
+    font-weight: normal;
+    display: block;
+}
+.saldos {
+    padding: 10px 10px !important;
+    text-align: right;
+    border-right: 0 solid #fff;
+    border-left: 0 solid #fff;
+    vertical-align: middle !important;
+}
+.text_footer_table {
+    font-size: 12px;
+    color: #71777f;
+    padding: 3px;
+}
+.saldo_footer {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0078d2;
+    margin-left: 10px;
+    white-space: nowrap;
+    display: inline-block;
+    min-width: 160px;
+}
+#min{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+}
+#sub_panel{
+    display: flex;
+    margin-left: 59%;
 }
 #sub{
     color:#004481;
-    font:bold;
+    font-weight:bold;
+    font-size: 18px;
+}
+footer{
+    margin-top: 50px;
+    background-color: #072146;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    z-index: 10;
+}
+#btns_finales{
+    display: flex;
+    color: aqua;
+    margin: 20px 0px 20px 0px;
+    padding-left: 0px;
+    padding-right: 150px;
+    margin-left: 14%;
+    justify-content: space-around;
+}
+.finales{
+    color:rgb(84, 202, 255);
+    font-size: 14px;
+}
+#fin{
+    color:rgb(165, 165, 165);
+    font-size:12px;
+    margin-top: 30px;
+    padding-left: 20%;
+    background-color: #072146;
 }

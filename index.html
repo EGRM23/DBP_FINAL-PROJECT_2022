@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="css/Estilo_pag.css">
 </head>
 <body>
+    <!--SECCIÓN AZUL DÓNDE ESTÁ EL TÍTULO Y LOS BOTONES DE AYUDA-->
     <section id="encabezado">
         <div id="mini_buttons">
             <nav id="seccion_botones">
-                <ul>
-                    <li><img src="Recursos/ic_q.png" class="ico"/><a href="#Post1">Conoce tu banca por internet</a></li>
-                    <li><img src="Recursos/ic_cli.png" class="ico"/><a href="#Post2">SOS Cliente</a></li>
-                    <li id="btn_azul"><img src="Recursos/etiquetas.png" class="ico"><a href="">Productos del Mes</a></li>
-                    <li id="btn_amarillo"><img src="Recursos/salir.png" class="ico"><a href="">Salir</a></li>
+                <ul class="mini_btns_encabezado">
+                    <li><img src="Recursos/ic_q.png" class="ico"/><a class="mini_btns_encabezado" href="#Post1">Conoce tu banca por internet</a></li>
+                    <li><img src="Recursos/ic_cli.png" class="ico"/><a class="mini_btns_encabezado" href="#Post2">SOS Cliente</a></li>
+                    <li><img src="Recursos/etiquetas.png" class="ico"><a id="btn_azul" class="mini_btns_encabezado" href="">Productos del Mes</a></li>
+                    <li><img src="Recursos/salir.png" class="ico"><a class="mini_btns_encabezado" id="btn_amarillo" href="">Salir</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,15 +38,17 @@
         <div id="Btn_principales">
             <nav id="list_btns">
                 <ul>
-                    <li id="aqui">Inicio</li>
-                    <li>Cuentas</li>
-                    <li>Tarjetas</li>
-                    <li>Seguros</li>
+                    <li><a id="Btn_principales" class="aqui">Inicio</a></li>
+                    <li><a id="Btn_principales" href="Cuentas.html">Cuentas</a></li>
+                    <li><a id="Btn_principales">Tarjetas</a></li>
+                    <li><a id="Btn_principales">Seguros</a></li>
                 </ul>
             </nav>
         </div>
     </section>
-    <section>
+    <!--SECCIÓN DEL CUERPO AQUÍ SI CAMBIA LA COSA-->
+    <section id="cuerpo">
+        <!--PARTE DE BIENVENIDA Y MOSTRAR PRODUCTOS-->
         <section id="panel_principal">
             <div id="principal_panel">
                 <p>Hola VICTOR ALEJANDRO, hoy te ofrecemos</p>
@@ -54,56 +57,137 @@
                 </div>
                 <div id="sub_panel">
                     <p id="sub"><strong>Ver todos los beneficios</strong></p>
-                    <img src="Recursos/ic_help.png">
+                    <img id="min" src="Recursos/ic_help.png">
                 </div>
             </div>
-            <div>
-                <p>Ocultar Importe:</p>
-                <img src="Recursos/help.png">
-                <button>OFF</button>
-                <button>ON</button>
-                <div>
-                    <table>
-                        <thead>
-                            <th>Cuentas</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>TIPO Y NUMERO DE CUENTA</td>
-                                <td>SALDO CONTABLE</td>
-                                <td>SALDO DISPONIBLE</td> 
-                            </tr>
-                            <tr id="datos_c">
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <table>
-                        <thead>
-                            <th>Préstamos</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>TIPO Y NÚMERO DE PRESTAMOS</td>
-                                <td>DEUDA<br>VENCIDA</td>
-                                <td>TOTAL PRESTADO</td>
-                                <td>SALDO PENDIENTE</td> 
-                            </tr>
-                            <tr id="datos_P">
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <div id="publicidad">
-                        <img src="">
+            <!--TABLAS DE CUENTAS Y PRESTAMOS-->
+            <div id="panel_contenido">
+                <!--BOTONES QUE CAMBIAN -->
+                <div class="bloque_switch-saldos">
+                    Ocultar Importes
+                    <span class="icon_info"></span>
+                    <button class="btn-switch-saldos">OFF</button>
+                    <button class="btn-switch-saldos_white">ON</button>
+                </div>
+                <article class="tables_panel">
+                    <header class="tables_header">
+                        <h4>Cuentas</h4>
+                    </header>
+                    <div class="tables_body_cuentas-prestamos">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th class="texto-importe-cabecera">TIPO Y NUMERO DE CUENTA</td>
+                                    <th class="texto-importe-cabecera">SALDO CONTABLE<span title class="icon_info"></span></td>
+                                    <th class="texto-importe-cabecera">SALDO DISPONIBLE</td> 
+                                </tr>
+                                <tr class="tables_body">
+                                    <td class="texto-body" style="display: flex; margin-bottom: 0px">
+                                        <div style="width: 100%">
+                                            <span class="link">0011-0778-0200156567</span><br>
+                                            <small class="txt_td_tbody">CUENTA INDEPENDENCIA</small>
+                                        </div>
+                                        <button class="btn-table_body">Quiero</button>
+                                    </td>
+                                    <td class="saldos">S/10.65</td>
+                                    <td class="saldos">S/10.65</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tables_legend">
+                        <div class="text_footer_table" style="display: flex; float: right">
+                            <div>
+                                <span style="vertical-align: middle;">Saldo disponible total</span>
+                            </div>
+                            <div>
+                                <span class="saldo_footer">S/10.65</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="tables_panel">
+                    <header class="tables_header">
+                        <h4>Préstamos</h4>
+                    </header>
+                    <div class="tables_body_cuentas-prestamos">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th class="texto-importe-cabecera">TIPO Y NUMERO DE PRÉSTAMO</td>
+                                    <th class="texto-importe-cabecera">DEUDA VENCIDA    </td>
+                                    <th class="texto-importe-cabecera">TOTAL PRESTADO</td>
+                                    <th class="texto-importe-cabecera">SALDO PENDIENTE</td> 
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--BOTONES DEL COSTADO, SIN FUNCIONALIDAD XDXDXD-->
+        <section id="panel_secundaria">
+            <div id="panel_botones">
+                <div id="boton_panelsec2">
+                    <img src="Recursos/btn_3.png">
+                    <div>
+                        <p id="btn_panelsec2">BBVA T-Cambio</p>
+                        <p id="p_panelsec2">Aquí encontrarás un tipo de<br>cambio preferencial para ti.</p>
+                        <a href="" id="a_btn_panelsec2">Cotízalo ahora</a>
                     </div>
                 </div>
+                <div class="boton_panelsec">
+                    <button id="abrir-cuenta-btn"><img src="Recursos/abre_cuenta.png" class="abrir-cta-online">Abrir nueva Cuenta 100% Online</button>
+                </div>
+                <div class="boton_panelsec">
+                    <button>Operaciones Frecuentes<div id="botones_S">
+                        <img src="Recursos/bt1_1.png"><img src="Recursos/bt1_2.png">
+                    </div></button>
+                </div>
+                <div class="boton_panelsec">
+                    <button>Paga tus servicios</button>
+                </div>
+                <div class="boton_panelsec">
+                    <button>Pago de tarjeta</button>
+                </div>
+                <div class="boton_panelsec">
+                    <button>Solicitar Revisión</button>
+                </div>
+                <div class="boton_panelsec">
+                    <button>Configura tu banca</button>
+                </div>
+                <div class="boton_panelsec">
+                    <button>Programa de beneficios</button>
+                </div>
+                <div id="q_dig"class="boton_panelsec">
+                    <p>Descubre que tan digital eres</p>
+                    <img width="70%"src="Recursos/semaforo-digital.gif">
+                </div>
+                <div class="boton_panelsec">
+                    <button>Ponle Corazón</button>
+                </div>
+                <div class="boton_panelsec">
+                    <button>Mi Salud Financiera</button>
+                </div>
             </div>
         </section>
-        <section id="panel_secundaria">
-            
-        </section>
     </section>
+    <!--SECCIÓN FINAL-->
+    <footer>
+        <div id="final">
+            <div id="logo">
+                <img src="Recursos/logo_bbva.svg"width="90px">
+            </div>
+            <div id="btns_finales" class="finales">
+                <a><p>Seguridad</p></a>
+                <a><p>Aviso Legal</p></a>
+                <a><p>Cláusulas Generales de Contratación</p></a>
+                <a><p>Políticas de Privacidad</p></a>
+            </div>
+            <div id="fin">
+                <p> &copy; NotBBVA S.A.</p>
+            </div>
+        </div>
+    </footer>
 </body>
