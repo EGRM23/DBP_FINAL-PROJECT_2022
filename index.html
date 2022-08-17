@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>BBVA</title>
     <link rel="stylesheet" href="css/Estilo_pag.css">
+    <script src="mini_funciones.js"></script>
 </head>
 <body>
     <!--SECCIÓN AZUL DÓNDE ESTÁ EL TÍTULO Y LOS BOTONES DE AYUDA-->
@@ -28,9 +29,14 @@
                     <div id="Contenedor">
                         <div id="usuario_dat">
                             <p id="name_usu">VICTOR ALEJANDRO</p>
-                            <img id="flecha_id" src="Recursos/flecha.png" width="15px"/>
+                            <ul>
+                                <li onclick="flecha()"><img id="flecha_id" src="Recursos/flecha.png" width="15px"/></li>
                         </div>
-                        <a font-size="12px">Actualiza tus datos</a>
+                        
+                        <div id="sub_menu_flecha">
+                        </div>
+                        <a href="actualizar.html" font-size="12px">Actualiza tus datos</a>
+
                     </div>
                 </div>
             </div>
@@ -52,7 +58,7 @@
         <section id="panel_principal">
             <div id="principal_panel">
                 <p>Hola VICTOR ALEJANDRO, hoy te ofrecemos</p>
-                <div id="carresul">
+                <div id="carrusel">
 
                 </div>
                 <div id="sub_panel">
@@ -87,7 +93,10 @@
                                             <span class="link">0011-0778-0200156567</span><br>
                                             <small class="txt_td_tbody">CUENTA INDEPENDENCIA</small>
                                         </div>
-                                        <button class="btn-table_body">Quiero</button>
+                                        <button onclick="quiero()" class="btn-table_body">Quiero</button>
+                                        <div id="sub_menu_quiero">
+                                            
+                                        </div>
                                     </td>
                                     <td class="saldos">S/10.65</td>
                                     <td class="saldos">S/10.65</td>

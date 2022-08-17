@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>BBVA</title>
     <link rel="stylesheet" href="css/Estilo_pag.css">
+    <script src="mini_funciones.js"></script>
 </head>
 <body>
     <!--SECCIÓN AZUL DÓNDE ESTÁ EL TÍTULO Y LOS BOTONES DE AYUDA-->
@@ -28,9 +29,14 @@
                     <div id="Contenedor">
                         <div id="usuario_dat">
                             <p id="name_usu">VICTOR ALEJANDRO</p>
-                            <img id="flecha_id" src="Recursos/flecha.png" width="15px"/>
+                            <ul>
+                                <li onclick="flecha()"><img id="flecha_id" src="Recursos/flecha.png" width="15px"/></li>
                         </div>
-                        <a font-size="12px">Actualiza tus datos</a>
+                        
+                        <div id="sub_menu_flecha">
+                        </div>
+                        <a href="actualizar.html" font-size="12px">Actualiza tus datos</a>
+
                     </div>
                 </div>
             </div>
@@ -38,15 +44,16 @@
         <div id="Btn_principales">
             <nav id="list_btns">
                 <ul>
-                    <li><a id="Btn_principales" class="aqui">Inicio</a></li>
-                    <li><a id="Btn_principales" href="Cuentas">Cuentas</a></li>
+                    <li><a id="Btn_principales" href="index.html">Inicio</a></li>
+                    <li><a id="Btn_principales" class="aqui" href="Cuentas.html">Cuentas</a></li>
                     <li><a id="Btn_principales">Tarjetas</a></li>
                     <li><a id="Btn_principales">Seguros</a></li>
                 </ul>
             </nav>
         </div>
     </section>
-    <section>
+    <!--Parte donde se muestran los productors para el cliente-->
+    <section id="cuerpo">
         <div id="cab_cuentas">
             <div id="Productos">
                 <h2>Cuentas BBVA para mí</h2>
@@ -54,12 +61,12 @@
                 <div id="Product_fil">
                     <div class="producto">
                         <img src="Recursos/p1.png"/>
-                        <h3>Sin costo de<br>mantenimiento</h3>
+                        <h3>Sin costo demantenimiento</h3>
                         <p>Cuenta Independencia</p>
                     </div>
                     <div class="producto">
                         <img src="Recursos/p2.png"/>
-                        <h3>Participa en sorteos y<br>PREMIOS INMEDIATOS</h3>
+                        <h3>Participa en sorteos y PREMIOS INMEDIATOS</h3>
                         <p>Cuenta Ganadora</p>
                     </div>
                     <div class="producto">
@@ -72,12 +79,26 @@
                         <h3>Usa tus fondos mediante<br>giros o cheques</h3>
                         <p>Cuenta Corriente</p>
                     </div>
-                    
                 </div>
             </div>
         </div>
-
     </section>
+    <!--AQUÍ ESTA EL ENCABEZADO DE LA SECCION LOS BTNS DEBEN CAMBIAR CUANDO SE CAMBIA DE AJAX -->
+    <section id="header">
+        <section class="btns_header">
+            <h3>Cuentas</h3>
+            <div id="btns_Ajax">
+                <button id="btn_non_select">Mis productos</button>
+                <button id="btn_select">Más información</button>
+            </div>
+    </section>
+    <hr class="separador">
+    </section>
+    <section id="ajax">
+        <!--AQUÍ PONDRÍA EL AJAX... SI TUVIERA UNO-->
+        <br>
+    </section>
+    <!--Pie de página no tocar-->
     <footer>
         <div id="final" display="flex">
             <div id="logo">
