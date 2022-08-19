@@ -1,4 +1,11 @@
+console.log();
+var is_op = false;
 function login() {
+    if (is_op == true) {
+        erase();
+        is_op = false;
+        return
+    }
     header = document.getElementById('swiper');
     body = document.body;
     let fila = `<div id="login" class="login">
@@ -8,7 +15,7 @@ function login() {
         </button>
         <div class="login_page">
             <h2>¡Bienvenido!</h2>
-            form class="form-login">
+            <form class="form-login">
                 <select class="form1_select" name="" placeholder="Tipo de Documento">
                     <option value="" disabled selected hidden>Tipo de Documento</option>
                     <option value="">DNI</option>
@@ -42,6 +49,7 @@ function login() {
     </script>`
     header.lastElementChild.insertAdjacentHTML('beforebegin', fila);
     body.lastElementChild.insertAdjacentHTML('beforeend', scrip);
+    is_op = true;
 };
 
 function erase() {

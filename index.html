@@ -5,6 +5,7 @@
     <title>BBVA</title>
     <link rel="stylesheet" href="css/Estilo_pag.css">
     <script src="mini_funciones.js"></script>
+    <link rel="icon" href="Main_Page/Content/favicon.jpg">
 </head>
 <body>
     <!--SECCIÓN AZUL DÓNDE ESTÁ EL TÍTULO Y LOS BOTONES DE AYUDA-->
@@ -44,10 +45,12 @@
         <div id="Btn_principales">
             <nav id="list_btns">
                 <ul>
-                    <li><a id="Btn_principales" class="aqui">Inicio</a></li>
+                    <li><a id="Btn_principales" class="aqui" href="index.html">Inicio</a></li>
                     <li><a id="Btn_principales" href="Cuentas.html">Cuentas</a></li>
-                    <li><a id="Btn_principales">Tarjetas</a></li>
-                    <li><a id="Btn_principales">Seguros</a></li>
+                    <li><a id="Btn_principales" href="Tarjetas.html">Tarjetas</a></li>
+                    <li><a id="Btn_principales" href="Prestamos.html">Préstamos</a></li>
+                    <li><a id="Btn_principales" href="Inversiones.html">Inversiones</a></li>
+                    <li><a id="Btn_principales" href="Seguros.html">Seguros</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,8 +61,19 @@
         <section id="panel_principal">
             <div id="principal_panel">
                 <p>Hola VICTOR ALEJANDRO, hoy te ofrecemos</p>
-                <div id="carrusel">
-
+                <div id="Product_hoy">
+                    <div class="producto">
+                        <img src="Recursos/ic_Tarjeta_credito.svg"/>
+                        <h3>Descubre si tienes una Tarjeta de Crédito aprobada</h3>
+                    </div>
+                    <div class="producto">
+                        <img src="Recursos/ic_chanchito.png"/>
+                        <h3>Abre una cuenta con CERO  costo sin ir a oficinas</h3>
+                    </div>
+                    <div class="producto">
+                        <img src="Recursos/ic_Fondossvg.svg">
+                        <h3>Haz crecer tu dinero, abre tu fondo mutuo</h3>
+                    </div>
                 </div>
                 <div id="sub_panel">
                     <p id="sub"><strong>Ver todos los beneficios</strong></p>
@@ -128,7 +142,6 @@
                                     <th class="texto-importe-cabecera">TOTAL PRESTADO</td>
                                     <th class="texto-importe-cabecera">SALDO PENDIENTE</td> 
                                 </tr>
-                                
                             </tbody>
                         </table>
                     </div>
