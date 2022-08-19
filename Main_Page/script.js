@@ -8,9 +8,20 @@ function login() {
         </button>
         <div class="login_page">
             <h2>¡Bienvenido!</h2>
-            <form class="form-login">
-                <select class="form1_select" name="" id="">
-                    <option value="">a</option>
+            form class="form-login">
+                <select class="form1_select" name="" placeholder="Tipo de Documento">
+                    <option value="" disabled selected hidden>Tipo de Documento</option>
+                    <option value="">DNI</option>
+                    <option value="">RUC</option>
+                    <option value="">Pasaporte</option>
+                    <option value="">DNI</option>
+                    <option value="">DNI</option>
+                    <option value="">Carné de Extranjería</option>
+                    <option value="">Carné Identidad Militar</option>
+                    <option value="">Carné Diplomático</option>
+                    <option value="">Partida de Nacimiento</option>
+                    <option value="">Carné PTP</option>
+                    <option value="">Doc. Identidad País Origen</option>
                 </select>
                 <input class="form1" id="dni" name="dni" type="text" placeholder="Numero de documento" />
                 <input class="form1" id="clave" name="clave" type="password"
