@@ -769,3 +769,154 @@ hr.separador4{
     margin-top: 5px;
     margin-bottom: 7px;
 }
+#cuenta_trans{
+    font-size: 12px;
+    display:flex;
+    justify-content: space-between;
+}
+#Saldo{
+    font-size: 22px;
+    color:#0078d2;
+    font-weight: bold;
+    
+}
+#cuenta_trans div p{
+    margin-top:2px;
+    margin-left:2px;
+}
+#proceso{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+}
+#operaciones{
+    background-color: #dfecf5;
+    border-radius: 5px;
+    padding-top: 15px;
+}
+#cabecera_op{
+    margin-left: 10%;
+}
+#cabecera_op button{
+    align-content: center;
+    font-weight: bold;
+    color: #0072c9;
+    padding: 0px 5px 15px 5px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #ffff;
+    border-top:1px solid #c3c3c3;
+    border-right:1px solid #c3c3c3;
+    border-left:1px solid #c3c3c3;
+    z-index: 20;
+    border-bottom: none;
+}
+#cabecera_op button img{
+    position: relative;
+    top:8px;
+}
+#Trasnfer_cuerpo{
+    font-size: 12px;
+    margin:-4px 5px 5px 5px;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    border-radius: 5px ;
+    border:1px solid #c3c3c3;
+}
+#Trasnfer_cuerpo h2{
+    color:#0072c9;
+    margin-bottom: 30px;
+}
+#progre_aqui{
+    color:#0065b7;
+}
+#div_p1{
+    padding:20px 20px 20px 20px;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+}
+#div_p1 input{
+    height:30px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+}
+#txt_p1{
+    width:40px;
+    background-color: #efeded;
+}
+#txt_p2{
+    width:40px;
+}
+.lleno{
+    background-color: #efeded; 
+}
+.pasos_trans{
+    margin-top: 50px;
+}
+.pasos_trans_lleno{
+    margin-top: 50px;
+    background-color: #efeded;
+}
+.pasos_trans_lleno h3{
+    font-size: 25px;
+    font-weight: normal;
+    color:#0078d2;
+    text-align: center;
+}
+
+.pasos_trans_lleno{
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+    padding: 25px
+}
+.pasos_trans_lleno div div input{
+    background-color: #efeded;
+}
+.pasos_trans_lleno button{
+    font-weight: bold;
+    font-size: 14px;
+    color:#ffff;
+    border:none;
+    background-color: #c2c2c2;
+    padding: 10px 30px 10px 30px;
+    position: relative;
+    left: 72%;
+}
+.pasos_trans h3{
+    font-size: 25px;
+    font-weight: normal;
+    color:#0078d2;
+    text-align: center;
+}
+.pasos_trans{
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+    padding: 25px
+}
+.pasos_trans button{
+    cursor:pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color:#ffff;
+    border:none;
+    background-color: #00559d;
+    padding: 10px 30px 10px 30px;
+    position: relative;
+    left: 72%;
+}
+.pasos_trans button:hover{
+    background-color: #0072c9;
+}
+#btns_confirm{
+    display: flex;justify-content: space-between;
+}
+#btns_confirm button{
+    position: relative;
+    left:0%;
+}

@@ -95,13 +95,5 @@ function flecha() {
     }
 };
 function quiero() {
-    var name='sub_menu_quiero'
-    let info = `<ul id="mini_pnl_btn_quiero"><li><a>Ver Saldos y movimientos</a></li><li><a href="transfer.html">Realizar transferencias</a></li><li><a>Pagar Tarjeta</a></li><li><a>Pagar servicios</a></li><li><a>Abrir fondos mutuos</a></li>        <li><a>Recargar celular</a></li></ul>`;
-    if (abierto_q == 0) {
-        abrir_sub(name, info);
-        abierto_q = 1;
-    } else if (abierto_q == 1) {
-        cerrar_sub(name);
-        abierto_q = 0;
-    }
+    location.href='Transferencia.html';
 };

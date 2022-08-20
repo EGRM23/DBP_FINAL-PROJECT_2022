@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BBVA</title>
+    <link rel="stylesheet" href="css/Estilo_pag.css">
+</head>
+<body>
+    <section id="panel_principal_ajax">
+        <!--TABLAS DE CUENTAS Y PRESTAMOS-->
+        <div id="panel_contenido">
+            <!--MULTIPLICAR ESTA COSA POR LA CANTIDAD DE CUENTAS DEL CLIENTE -->
+            <div id="cuenta_trans">
+                <div id="id_cuenta">
+                    <p style="font-weight: bold;">AQUÍ PONDRÉ EL NUMERO DE CUENTA</p>
+                    <p>CUENTA X</p>
+                </div>
+                <div id="sobre_elmoney">
+                    <p style="font-weight: bold;">Disponible</p>
+                    <p id="Saldo">S/.10.00</p>
+                    <p>Contable: <strong>S./10.00</strong></p>
+                </div>
+            </div>
+            <section id="operaciones" style="margin-top: 20px;">
+                <div id="cabecera_op">
+                    <button>Operaciones<img src="Recursos/btns_sub/bnt_t_4.png" style="margin-left: 10px;" width="30px"></button>
+                </div>
+                <form id="Trasnfer_cuerpo">
+                    <h2>Realizar transferencia</h2>
+                    <div id="proceso">
+                            <p id="progre_aqui">1. Cuenta Destino</p>
+                            <p>2.Introducir datos</p>
+                            <p>3. Confirmar</p>
+                            <p>4. Constancia</p>
+                    </div>
+                    <img src="Recursos/Progre_bar/p_g1.jpg"width="100%">
+                    <div id="proceso_ajax">
+                        <div id="paso_1" class="pasos_trans">
+                            <h3>Enviar dinero a</h3>
+                            <div id="div_p1"style="display:flex;align-items: center; justify-content: space-between;">
+                                <p>Número  de cuenta</p>
+                                <div>
+                                    <input readonly type="text" value="0011" maxlength="4" id="txt_p1"> - 
+                                    <input type="text" value="" maxlength="4"id="txt_p2"> - 
+                                    <input type="text" value="" maxlength="10" id="txt_p3">
+                                </div>
+                            </div>
+                            <button>Siguiente</button>
+                        </div>
+                        <div id="paso_2" class="pasos_trans">
+                            <h3>Monto a enviar</h3>
+                            <div id="div_p1"style="display:flex;align-items: center; justify-content: space-between;"cas>
+                                <p>Monto en soles</p>
+                                <div>
+                                    S/. <input type="text" value="" maxlength="10" id="txt_p3">
+                                </div>
+                            </div>
+                            <button>Siguiente</button>
+                        </div>
+                        <div id="paso_3" class="pasos_trans">
+                            <h3>CONFIRME SI TODO ES CORRECTO</h3>
+                            <div id="div_p1"style="display:flex;align-items: center; justify-content: space-between;">
+                                <p>ENVIAR A </p>
+                                <p>numero de cuenta</p>
+                                <p> un total de <strong>S./ money</strong></p>
+                            </div>
+                            <div id="btns_confirm">
+                                <button onclick="location.href='Cuentas.html'">Cancelar</button>
+                                <button>Siguiente</button>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </form>
+            </section>
+        </div>
+    </section>
+    <!--BOTONES DEL COSTADO, SIN FUNCIONALIDAD XDXDXD-->
+    <section id="panel_secundaria_ajax">
+        <div id="panel_botones">
+            <div class="boton_panelsec_ajax">
+                <button id="abrir-cuenta-btn"><img src="Recursos/abre_cuenta.png" class="abrir-cta-online">Abrir nueva Cuenta 100% Online</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Abrir Depósito a Plazo Fijo</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Histórico efectivo móvil</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Mi Meta</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Ahorro por redondeo</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Mis recomendados</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Afilición SUNAT</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Recarga de Celular</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Recargar tarjeta regalo</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Programa tus Recibos</button>
+            </div>
+            <div class="boton_panelsec_ajax">
+                <button>Cancelación de cuentas</button>
+            </div>
+        </div>
+    </section>
+    
+</section>
+</body>
