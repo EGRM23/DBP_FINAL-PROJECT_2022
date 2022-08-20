@@ -742,3 +742,18 @@ hr.separador_chiki{
     color: black;
     margin-top: 20px;
 }
+hr.separador4{
+    position: relative;
+    border-top:1px solid #dfdfdf;
+    width: 65%;
+    top: -10px;
+    margin-bottom: 20px;
+}
+#dat_actualizar{
+    font-weight: normal;
+    color:#00559d;
+    font-size: 20px;
+    background-color: #f3f3f3;
+    padding:10px 10px 10px 10px;
+    margin:5px ;
+}

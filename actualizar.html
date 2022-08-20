@@ -46,8 +46,8 @@
             <nav id="list_btns">
                 <ul>
                     <li><a id="Btn_principales" href="index.html">Inicio</a></li>
-                    <li><a id="Btn_principales" href="Cuentas.html">Cuentas</a></li>
-                    <li><a id="Btn_principales" href="Tarjetas.html" class="aqui">Tarjetas</a></li>
+                    <li><a id="Btn_principales" href="Cuentas.html" class="aqui">Cuentas</a></li>
+                    <li><a id="Btn_principales" href="Tarjetas.html">Tarjetas</a></li>
                     <li><a id="Btn_principales" href="Prestamos.html">Préstamos</a></li>
                     <li><a id="Btn_principales" href="Inversiones.html">Inversiones</a></li>
                     <li><a id="Btn_principales" href="Seguros.html">Seguros</a></li>
@@ -56,46 +56,74 @@
         </div>
     </section>
     <!--Parte donde se muestran los productors para el cliente-->
-    <section id="cuerpo">
-        <div id="cab_Resto">
-            <div id="Productos">
-                <h2>BBVA para mí</h2>
-                <hr class="separador_chiki">
-                <p>Aprovecha los 4 productos que hemos reservado para ti</p>
-                <div id="Product_fil">
-                    <div class="producto">
-                        <img src="Recursos/ic_Tarjeta_credito.svg"/>
-                        <h3>Descubre si tienes una Tarjeta de Crédito aprobada</h3>
-                    </div>
-                    <div class="producto">
-                        <img src="Recursos/ic_Aperturar-cuenta.svg"/>
-                        <h3>Abre tu cuenta al instante</h3>
-                    </div>
-                    <div class="producto">
-                        <img src="Recursos/ic_Fondossvg.svg"/>
-                        <h3>Haz crecer tu dinero, abre tu fondo mutuo</h3>
-                    </div>
-                    <div class="producto">
-                        <img src="Recursos/ic_deposito_plazo_fijo.png"/>
-                        <h3>Abre tu deposito a Plazo y Ahorra</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--AQUÍ ESTA EL ENCABEZADO DE LA SECCION LOS BTNS DEBEN CAMBIAR CUANDO SE CAMBIA DE AJAX -->
     <section id="header">
         <section class="btns_header">
-            <h3>Tarjetas</h3>
-            <div id="btns_Ajax">
-                <button id="btn_select">Mis productos</button>
-                <button id="btn_non_select">Más información</button>
-            </div>
+            <h3>Cuentas</h3>
+        </section>
     </section>
     <hr class="separador">
     </section>
     <section id="ajax">
-        <!--AQUÍ PONDRÍA EL AJAX... SI TUVIERA UNO-->
+        <section id="panel_principal_ajax">
+            <!--TABLAS DE CUENTAS Y PRESTAMOS-->
+            <div id="panel_contenido">
+                <!--BOTONES QUE CAMBIAN -->
+                <article class="tables_panel">
+                    <p>Cualquier actualización de tus datos personales se verá reflejada en todos nuestros canales(Red de Oficinas, Banca por Internet y Cajero)</p>
+                    <h4 style="color:#0065b7; font-weight: normal; font-size:20px; margin-top:20px;margin-bottom: 20px; margin-left:5px;">Datos de contacto</h4>
+                    <hr class="separador4">
+                    <div id="seccion_datos">
+                        <h3 id="dat_actualizar">Uso de Datos Personales</h3>
+                        <div id="info">
+                            <p id="etiqueta">Estado:</p>
+                            <p>Atorizado</p>
+                            <p id="etiqueta">Fecha de respuesta:</p>
+                            <p></p>
+                        </div>
+                </article>
+            </div>
+        </section>
+        <!--BOTONES DEL COSTADO, SIN FUNCIONALIDAD XDXDXD-->
+        <section id="panel_secundaria_ajax">
+            <div id="panel_botones">
+                <div class="boton_panelsec_ajax">
+                    <button id="abrir-cuenta-btn"><img src="Recursos/abre_cuenta.png" class="abrir-cta-online">Abrir nueva Cuenta 100% Online</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Abrir Depósito a Plazo Fijo</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Histórico efectivo móvil</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Mi Meta</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Ahorro por redondeo</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Mis recomendados</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Afilición SUNAT</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Recarga de Celular</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Recargar tarjeta regalo</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Programa tus Recibos</button>
+                </div>
+                <div class="boton_panelsec_ajax">
+                    <button>Cancelación de cuentas</button>
+                </div>
+            </div>
+        </section>
+        
+    </section>
         <br>
     </section>
     <!--Pie de página no tocar-->

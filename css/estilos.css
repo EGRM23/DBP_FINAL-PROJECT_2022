@@ -11,7 +11,6 @@
 }
 .contenido{
     display: flex;
-    height: 820px;
     font-family: 'Nunito', sans-serif;
 }
 .datos{
@@ -23,7 +22,6 @@
 }
 .formulario{
     width: 500px;
-    height: 600px;
     padding: 20px 0px;
     
 }
