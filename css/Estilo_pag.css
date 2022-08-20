@@ -757,3 +757,15 @@ hr.separador4{
     padding:10px 10px 10px 10px;
     margin:5px ;
 }
+#etiqueta{
+    font-weight:bold;
+    width: 300px;
+}
+#respuesta_e{
+    right:-20000px;
+}
+#Rpta_label{
+    display:flex;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
